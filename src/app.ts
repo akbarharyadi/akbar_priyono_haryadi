@@ -1,7 +1,4 @@
 import express from 'express';
-
-import * as winston from 'winston';
-import * as expressWinston from 'express-winston';
 import * as dotenv from 'dotenv'
 import { BaseRoutes } from './routes/BaseRoutes';
 import { UserRoutes } from './routes/UserRoutes';
