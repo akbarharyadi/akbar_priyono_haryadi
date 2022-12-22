@@ -14,7 +14,7 @@
 * Using TypeScript
 * Simple API with (/users POST/PUT/DELETE)
 * Please look to Postman : https://documenter.getpostman.com/view/1962839/2s8Z6u5F8g
-* URL PROD : akbarharyadi.online
+* URL PROD : http://www.akbarharyadi.online
 
 ## License
 Copyright (c) 2022
