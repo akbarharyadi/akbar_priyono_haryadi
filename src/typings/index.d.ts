@@ -1,7 +1,7 @@
+import { IUser } from "../model/interface/IUser";
 
-import { users } from '@prisma/client'
 declare global {
     namespace Express {
-        interface User extends users {}
+        interface User extends IUser {}
     }
 }

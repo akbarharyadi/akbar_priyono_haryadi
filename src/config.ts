@@ -1,2 +1,3 @@
 export const SECRET_KEY = process.env.SECRET_KEY as string;
-export const URL_DATABASE = `mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}?authSource=admin`
+export const URL_DATABASE = `mongodb://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_DB_HOST}:${process.env.MONGODB_DOCKER_PORT}/${process.env.MONGODB_DATABASE}?authSource=admin&readPreference=primary&ssl=false&directConnection=true`
+export const URL_REDIS = `redis://${process.env.REDIS_USER}:${process.env.REDIS_PASSWORD}@${process.env.REDIS_HOST}:${process.env.REDIS_DOCKER_PORT}`
