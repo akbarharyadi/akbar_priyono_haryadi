@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  mongodb:
+    container_name: mongo-dev
+    image: mongo
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=$MONGODB_USER
+      - MONGO_INITDB_ROOT_PASSWORD=$MONGODB_PASSWORD
+      - MONGO_INITDB_DATABASE=$MONGODB_DATABASE
+    ports:
+      - $MONGODB_REP_1_LOCAL_PORT:$MONGODB_DOCKER_PORT
+    volumes:
+      - ./db/rep1:/data/db

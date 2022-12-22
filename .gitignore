@@ -1,0 +1,8 @@
+yarn.lock
+node_modules/*
+dist/*
+.env
+coverage/*
+.env.development
+.env.test
+.gitignore
